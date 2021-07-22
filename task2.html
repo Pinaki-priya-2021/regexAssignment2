@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>task2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='task2.js'></script>
+</head>
+<body>
+    <table border="solid 1px">
+        <tr>
+            <th>Calls</th>
+            <th>Charges</th>
+            <th>SMS</th>
+            <th>Charges</th>
+        </tr>
+        <tr>
+            <td>upto 50</td>
+            <td>50 paisa per call</td>
+            <td>upto 50</td>
+            <td>No Charges</td>
+        </tr>
+        <tr>
+            <td>upto 150</td>
+            <td>70 paisa per call</td>
+            <td>upto 200</td>
+            <td>25 paisa per SMS</td>
+        </tr>
+        <tr>
+            <td>upto 300</td>
+            <td>85 Paisa per call</td>
+            <td>upto 400</td>
+            <td>40 paisa per SMS</td>
+        </tr>
+        <tr>
+            <td>More than 300</td>
+            <td>95 Paisa per call</td>
+            <td>More than 400</td>
+            <td>45 paisa per SMS</td>
+        </tr>
+    </table><br><br>
+    <div>
+        <label for="calls">No.of calls  </label><input type="number" name="calls" id="calls"><br><br>
+        <label for="sms">No. of SMS  </label><input type="number" name="sms" id="sms"><br><br>
+        <button type="submit" onclick="return total()">Submit</button>
+    </div><br><br>
+    Total Charges:<div id="result"></div>
+</body>
+</html>
